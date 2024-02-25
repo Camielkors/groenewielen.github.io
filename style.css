@@ -24,7 +24,7 @@ body, html {
   }
 
   
-  .navbar {
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,17 +39,20 @@ body, html {
   
   .navbar-links {
     display: flex;
+    list-style-type: none;
+    
     
   }
   
   .navbar-link {
     color: white;
     text-decoration: none;
-    margin: 0.8em;
+    margin: 0.55em;
     font-family:'Overpass', sans-serif;
     transition: background-color 0.3s ease;
     font-size: large;
-    margin-bottom: 0.3em;
+    
+    
   }
   
   .navbar-link:hover {
@@ -70,12 +73,13 @@ body, html {
   }
   
   .h1home {
+    padding-top: 0.5em;
     margin-top: 0;
     margin-bottom: 0.5em;
     display: flex;
     justify-content: center; 
     align-items: center; 
-    font-size: 1.2em;
+    font-size: 1.7em;
   }
 
   .bakfiets {
@@ -194,6 +198,10 @@ body, html {
   .voordeel-icon {
     width: 3.9em; 
     height: auto;
+    flex: 1; /* Allows the images to grow and fill the container evenly */
+    
+    height: 5px; /* Example fixed height */
+    object-fit: cover; /* Adjusts the image's size to cover the area, could also use 'contain' to ensure no cropping */
     
   }
   
